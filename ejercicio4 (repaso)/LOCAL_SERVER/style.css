@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-image: url(images/background/tecno2.jpg);
+    background-size: cover;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 0 20px;
+}
+
+.card-container{
+    display: flex;
+    width: 600px;
+    height: auto;
+    background-color: rgba(0, 0, 250, 0.541);
+    border-radius: 2px;
+    box-shadow: 1px 1px 4px 2px rgba(0, 0, 0, .2);
+}
+
+header{
+    border-right: 1px solid #ddd;
+}
+
+.descripcion{
+    background: #fbfbfb8c;
+}
+.header, .descripcion{
+    padding: 20px;
+    text-align:center;
+}
+
+.header a{
+    position:relative;
+    display: block;
+}
+
+.header img{
+    border-radius: 50%;
+    box-shadow: 0 0 0 8px rgba(0, 0, 0, .06);
+    margin: 20px 30px;
+    transition: .2s;
+}
+
+.header a:hover img{
+    box-shadow: 0 0 0 12px rgba(0, 0, 0, .1);
+}
+
+.header h2{
+    color:tomato;
+    font-size: 1.1rem;
+}
+
+.header h4{
+    margin-bottom: 20px;
+    font-size: 1rem;
+    animation-delay: 5s;
+    animation-iteration-count: 1;
+    
+}
+
+.descripcion{
+    position: relative;
+}
+.descripcion p{
+    margin: 20px 30px;
+    font-family: 'Slabo 27px', serif;
+    font-size: 1rem;
+}
+
+.descripcion .social{
+    margin-top: 25px;
+}
+
+.descripcion .social a{
+    display: inline-block;
+    padding: 0 15px;
+    color: tomato;
+}
+
+@media (max-width:640px){
+    .card-container{
+        display: block;
+        width: 450px;
+    }
+
+    .header{
+        padding: 20px 20px 5px 20px;
+        border: none;
+    }
+
+    .descripcion{
+        padding: 5px 20px 20px 20px;
+        background:  #fbfbfb8c;
+    }
+
+    .header h4{
+        margin: 0;
+    }
+}
